@@ -33,13 +33,15 @@ It reads `toll_plazas_raw.csv` (the registry the [toll system](https://github.co
 
 ## Excel dashboard
 
+![Excel dashboard with a state picker, six number tiles, insights, suggestions and four charts of India's toll plazas](assets/dashboard.webp)
+
 Open `india-toll-dashboard.xlsx` and pick a state in the yellow cell on the Dashboard sheet. The tiles, insights, suggestions and charts follow that choice. Everything reads from one table, so a row added to the Data sheet updates the numbers, state ranking and dropdown with no macros. It needs Excel 2010 or later, and the Checks sheet compares it with fixed reference figures.
 
 ## Main findings
 
 - Four states (Rajasthan, Uttar Pradesh, Madhya Pradesh, Maharashtra) hold 53.6% of 1,997 plazas.
 - 73.5% of national-road plazas are publicly funded, while 65% of state-road plazas use private models.
-- Karnataka has the highest private share among big states (71.7%), Punjab the lowest (17.6%).
+- Karnataka has the highest private share among big states (71.7%), Punjab the lowest (17.6%). Big means 50 or more plazas: Odisha is lower at 17.1%, but has only 35.
 - 29.6% of plazas have another plaza within 10 km in a straight line.
 
 ## Recommendation

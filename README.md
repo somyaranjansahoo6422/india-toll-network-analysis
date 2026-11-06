@@ -1,6 +1,15 @@
 # India's toll network, in data
 
-An end-to-end analysis of the plaza registry from my [Smart Toll Plaza project](https://github.com/somyaranjansahoo6422/smart-toll-plaza-system) (list dated 26 May 2026). See it in the Data Lab on [my portfolio](https://somyaranjansahoo6422.github.io/).
+An end-to-end analysis of the plaza registry from my Smart Toll Plaza project (list dated 26 May 2026).
+
+## One project, two repos
+
+| Part | Repo | What it holds |
+|---|---|---|
+| **System** | [smart-toll-plaza-system](https://github.com/somyaranjansahoo6422/smart-toll-plaza-system) | The working app: number plate reading, toll payments, the GIS map and analytics |
+| **Data and analysis** (you are here) | [india-toll-network-analysis](https://github.com/somyaranjansahoo6422/india-toll-network-analysis) | The full analysis of the plaza data the app runs on: cleaning log, SQL, findings and an Excel dashboard |
+
+Both repos use the same registry of 2,003 toll plazas. See them together on [my portfolio](https://somyaranjansahoo6422.github.io/).
 
 **Questions:** where are India's toll plazas, who runs them, how close together are they, and can this data be trusted?
 
@@ -11,7 +20,7 @@ pip install pandas numpy
 python analysis.py
 ```
 
-It reads `toll_plazas_raw.csv`, runs the SQL in `queries.sql`, and writes `toll_plazas_clean.csv`, `cleaning_log.csv`, `toll.db` and `results.json`.
+It reads `toll_plazas_raw.csv` (the registry the [toll system](https://github.com/somyaranjansahoo6422/smart-toll-plaza-system) runs on), runs the SQL in `queries.sql`, and writes `toll_plazas_clean.csv`, `cleaning_log.csv`, `toll.db` and `results.json`.
 
 ## Files
 

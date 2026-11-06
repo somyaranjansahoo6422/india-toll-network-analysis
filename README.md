@@ -20,6 +20,11 @@ It reads `toll_plazas_raw.csv`, runs the SQL in `queries.sql`, and writes `toll_
 | `analysis.py` | Cleaning pipeline: every change is logged |
 | `queries.sql` | The questions in SQL (CTEs, window functions). Written for MySQL 8, run here on SQLite |
 | `cleaning_log.csv` | All 159 records that were fixed or flagged, and why |
+| `india-toll-dashboard.xlsx` | Excel dashboard built on the clean data |
+
+## Excel dashboard
+
+Open `india-toll-dashboard.xlsx` and pick a state in the yellow cell on the Dashboard sheet. The tiles, insights, suggestions and charts follow that choice. Everything reads from one table, so a row added to the Data sheet updates the numbers, state ranking and dropdown with no macros. It needs Excel 2010 or later, and the Checks sheet compares it with fixed reference figures.
 
 ## Main findings
 
